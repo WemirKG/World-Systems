@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Get Access | Your Co-Pilot System</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="nav">
+    <div class="container nav-inner">
+      <div class="brand">
+        <div style="width:34px;height:34px;border-radius:12px;background:linear-gradient(135deg, rgba(88,119,255,.75), rgba(0,255,200,.45));border:1px solid var(--border);"></div>
+        <div>
+          Your Co-Pilot System
+          <div class="badge">Get Access</div>
+        </div>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="how-it-works.html">How it works</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="support.html">Support</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <h1 class="section-title">Get Access with Email</h1>
+      <p class="section-sub">Private access, onboarding guide, and your Co-Pilot starter prompts delivered immediately.</p>
+
+      <form class="form"
+        action="https://formspree.io/f/YOUR_FORM_ID"
+        method="POST">
+
+        <input class="input" type="text" name="name" placeholder="Full name" required>
+        <input class="input" type="email" name="email" placeholder="Email address" required>
+
+        <select class="input" name="audience" required>
+          <option value="" disabled selected>Which Co-Pilot are you interested in?</option>
+          <option value="Educator">Educator Co-Pilot</option>
+          <option value="Creator/Studio">Creator / Studio Co-Pilot</option>
+          <option value="Business">Business Co-Pilot</option>
+          <option value="Not sure">Not sure yet</option>
+        </select>
+
+        <textarea class="input" name="goal" rows="4" placeholder="What do you want your Co-Pilot to help you do? (Optional)"></textarea>
+
+        <label class="checkbox">
+          <input type="checkbox" name="consent" value="yes" required>
+          <span>
+            I agree to receive emails about my access and updates. I understand I can unsubscribe anytime.
+          </span>
+        </label>
+
+        <!-- Redirect to your thank-you page after submission -->
+        <input type="hidden" name="_next" value="https://YOUR-GITHUB-PAGES-URL/thank-you.html">
+
+        <button class="btn primary" type="submit">Send My Access</button>
+
+        <div class="note">
+          We do not sell your data. We do not spam. This email gate exists to keep access private and deliver onboarding safely.
+        </div>
+      </form>
+
+      <div class="hr"></div>
+
+      <div class="callout">
+        <strong>What you’ll receive:</strong>
+        <ul>
+          <li>Quick Start: “3 prompts to get value in 5 minutes”</li>
+          <li>Prompt menu for your role</li>
+          <li>Privacy checklist (what not to paste + anonymize)</li>
+          <li>Your access link + next steps</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div>© <span id="year"></span> Your Co-Pilot System.</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
