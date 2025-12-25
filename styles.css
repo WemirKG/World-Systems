@@ -128,3 +128,8 @@ ul{margin:10px 0 0 18px;color:rgba(234,240,255,.92);line-height:1.65}
   padding:12px 14px;border:1px solid rgba(0,255,200,.35);
   border-radius:16px;background:rgba(0,255,200,.08)
 }
+// Small UX niceties; safe for GitHub Pages.
+document.addEventListener("DOMContentLoaded", () => {
+  const year = document.getElementById("year");
+  if (year) year.textContent = new Date().getFullYear();
+});
